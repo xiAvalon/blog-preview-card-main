@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body{
+    background-color: var(--yellow);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container{
+    width: 380px;
+    height: 480px;
+    background-color: var(--White);
+    border-radius: 12px;
+    box-shadow: 9px 9px var(--Black);
+    border: 0.5px solid var(--Black);
+}
+
+.article-img{
+    /* width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    border-radius: 12px;
+    display: block;
+    margin: 1.2rem auto;
+}
+
+p{
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    color: var(--Grey);
+    font-family: 'Figtree';
+    font-weight: 600;
+}
+
+h1{
+    color: var(--Black);
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+}
+
+h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.container:has(h1:hover) {
+    box-shadow: 15px 15px var(--Black);
+}
+
+.title{
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: var(--yellow);
+    padding: 4px;
+    margin-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+}
+
+span{
+    display: block;
+    margin-left: 1.5rem;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+    color: var(--Black);
+}
+
+.avatar{
+    margin-left: 1.5rem;
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.avatar > img{
+    width: 10%;
+    border-radius: 50%;
+}
+
+.avatar > strong{
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    color: var(--Black);
+    padding-left: 0.8rem;
+    font-size: 1rem;
+    padding-top: 10px;
+}
